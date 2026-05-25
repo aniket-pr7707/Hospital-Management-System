@@ -37,12 +37,12 @@ const Login = () => {
 
       localStorage.setItem(
         "role",
-        res.data.user.role
+        res.data.user?.role
       )
 
       localStorage.setItem(
         "name",
-        res.data.user.name
+        res.data.user?.name
       )
 
       navigate("/")
